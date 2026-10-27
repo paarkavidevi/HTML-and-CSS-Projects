@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Pet Paradise one-page website, featuring adorable pets, a gallery, videos, and a contact form.">
+    <title>Pet Paradise | One-Page Website</title>
+</head>
+<body>
+    <header id="home">
+        <h1>Welcome to Pet Paradise</h1>
+        <p>A happy place for people who love animals!</p>
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a> |
+            <a href="#gallery">Pictures</a> |
+            <a href="#videos">Videos</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="about-heading">
+            <h2 id="about-heading">About Pet Paradise</h2>
+            <p>Pets bring friendship, laughter, and love into our lives. Explore our gallery, watch a pet video, and get in touch!</p>
+            <blockquote cite="https://www.goodreads.com/quotes/29140-until-one-has-loved-an-animal-a-part-of-one-s">
+                <p>“Until one has loved an animal, a part of one's soul remains unawakened.”</p>
+                <footer>— Anatole France</footer>
+            </blockquote>
+        </section>
+
+        <section id="gallery" aria-labelledby="gallery-heading">
+            <h2 id="gallery-heading">Our Pet Picture Gallery</h2>
+            <p>Here are some adorable animal photos.</p>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A friendly dog looking at the camera" width="350">
+                <figcaption>A friendly dog</figcaption>
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A fluffy cat sitting comfortably" width="350">
+                <figcaption>A playful cat</figcaption>
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A little rabbit resting" width="350">
+                <figcaption>A cute rabbit</figcaption>
+            </figure>
+        </section>
+
+        <section id="videos" aria-labelledby="video-heading">
+            <h2 id="video-heading">Pet Videos</h2>
+            <p>Enjoy this animal-themed video.</p>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1HygThMLzGs" title="Animal video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>If the video doesn't play, <a href="https://www.youtube.com/results?search_query=cute+pets" target="_blank" rel="noopener noreferrer">find pet videos on YouTube</a>.</p>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <p>Have a question or want to share your favorite pet story? Send us a message!</p>
+            <!-- This sample form is for an HTML assignment and needs a backend or form service to actually send messages. -->
+            <form action="#contact" method="get">
+                <p><label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required></p>
+
+                <p><label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required></p>
+
+                <p><label for="pet">Favorite Pet:</label><br>
+                <input type="text" id="pet" name="favorite_pet" placeholder="Dog, cat, rabbit..."></p>
+
+                <p><label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40" required></textarea></p>
+
+                <p><button type="submit">Submit</button></p>
+            </form>
+            <p><small>Note: This is a practice form. It does not send messages until a form service or backend is added.</small></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pet Paradise. Created for the One-Page Website HTML assignment.</p>
+        <p><a href="#home">Back to Top</a></p>
+    </footer>
+</body>
+</html>
